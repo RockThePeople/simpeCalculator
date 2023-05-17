@@ -1,0 +1,47 @@
+html {
+  background-color: #222;
+  color:aliceblue;
+}
+
+#result {
+  text-align: right;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #444;
+  color: aliceblue;
+  border: #666 solid 3px;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0;
+  width: 200px;
+  padding: 13px;
+}
+#calculator input {
+  grid-column: 1 / span 4;
+  padding: 1px 4px 1px 4px;
+  font-size: 23px;
+}
+#calculator button {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.button_zero{
+  grid-column: 1 / span 2;
+}
+#num {
+  background-color: #666;
+  color:aliceblue;
+}
+
+#op{
+  background-color: orange;
+  color:aliceblue;
+}
+#func{
+  background-color: #444;
+  color:aliceblue;
+}

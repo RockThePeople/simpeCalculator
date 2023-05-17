@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Web Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="result" readonly>
+    <button id="func" onclick="clearAll()">C</button>
+
+    <button id="num" onclick="appendNumber(7)">7</button>
+    <button id="num" onclick="appendNumber(8)">8</button>
+    <button id="num" onclick="appendNumber(9)">9</button>
+    <button id="op" onclick="appendOperator('+')">+</button>
+    <button id="func" style="font-size: 16px; padding: 5px;" 
+    onclick="deleteLast()">del</button>
+
+    <button id="num" onclick="appendNumber(4)">4</button>
+    <button id="num" onclick="appendNumber(5)">5</button>
+    <button id="num" onclick="appendNumber(6)">6</button>
+    <button id='op' onclick="appendOperator('-')">-</button>
+    <button id='op' onclick="appendOperator('(')">(</button>
+    
+    <button id="num" onclick="appendNumber(1)">1</button>
+    <button id="num" onclick="appendNumber(2)">2</button>
+    <button id="num" onclick="appendNumber(3)">3</button>
+    <button id='op' onclick="appendOperator('*')">*</button>
+    <button id='op' onclick="appendOperator(')')">)</button>
+    
+    <button class="button_zero" id="num" onclick="appendNumber(0)">0</button>
+    <button id="num" id="float" onclick="makeNumFloat()">.</button>
+    <button id='op' onclick="appendOperator('/')">/</button>
+    <button id="op" onclick="calculate()">=</button>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
