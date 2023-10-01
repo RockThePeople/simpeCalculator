@@ -1,13 +1,10 @@
 #include <cstdlib>
-#include <vector>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int main() {
-    vector<int> a;
-    a.push_back(1);
-    printf("%d", a[0]);
-    cout << a[0];
+int main () {
+    cout << "I Can Write Simple Codes In My iPad SHIIIT!!";
     return 0;
 }
